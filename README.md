@@ -14,3 +14,5 @@ My algorithm makes use of the word embedding model known as ```Glove```. This is
 The image below is a heatmap that visually displays the data from ```distance.xlsx``` once the semantic distances between the keywords have been populated into it:
 
 ![Heatmap](heatmap.png)
+
+The white squares along the diagonal denote the distance between any keyword and itself which is always 1. It is interesting to see that the distance between ‘malicious bot’ and all the other keywords is always quite small comparatively speaking. We recall earlier that ‘malicious bot’ was the keyword for which we were able to retrieve the fewest number of articles. This means that there will have been fewer unique words associated with the keyword in its file, and so the distances to other keywords, which have a larger number of words, will be lower. In terms of keywords with a closer relationship, ransomware has a large distance to computer virus, malware and phishing. Targeted Threat has a close relationship with Dos attack.
